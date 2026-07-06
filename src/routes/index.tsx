@@ -157,7 +157,7 @@ const industries = [
 const screens = [
   {
     img: heroImg,
-    location: "Hebbal Flyover",
+    location: "Trimity Circle",
     area: "North Bangalore",
     dims: "40 ft × 20 ft",
     resolution: "P6 SMD",
@@ -187,50 +187,7 @@ const screens = [
   },
 ];
 
-const packages = [
-  {
-    name: "Starter",
-    price: "₹",
-    tagline: "Single-location pilot",
-    features: [
-      "1 premium LED location",
-      "10-second ad every minute",
-      "720 plays per day",
-      "14 hours of daily exposure",
-      "Creative review support",
-    ],
-    cta: "Schedule Consultation",
-    highlight: false,
-  },
-  {
-    name: "Growth",
-    price: "₹₹",
-    tagline: "Multi-location reach",
-    features: [
-      "3–5 premium LED locations",
-      "City-corridor coverage",
-      "Priority creative scheduling",
-      "Mid-campaign performance review",
-      "Dedicated account manager",
-    ],
-    cta: "Schedule Consultation",
-    highlight: true,
-  },
-  {
-    name: "Dominance",
-    price: "₹₹₹",
-    tagline: "Own the city",
-    features: [
-      "Full network roadblock",
-      "Bangalore-wide coverage",
-      "Premium time-band targeting",
-      "Custom creative production",
-      "Weekly performance reports",
-    ],
-    cta: "Schedule Consultation",
-    highlight: false,
-  },
-];
+
 
 const whyUs = [
   { icon: MapPin, title: "Premium Traffic Locations", desc: "Hand-picked junctions with maximum commuter density." },
@@ -428,59 +385,7 @@ function Home() {
         </div>
       </section>
 
-      {/* PACKAGES */}
-      <section id="packages" className="py-24 md:py-32 border-t border-border bg-gradient-night">
-        <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-electric">Campaign Packages</p>
-            <h2 className="mt-4 font-display text-4xl md:text-5xl font-bold tracking-tight max-w-3xl">
-              Choose a campaign that scales with your ambition.
-            </h2>
-          </Reveal>
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
-            {packages.map((p, i) => (
-              <Reveal key={p.name} delay={i * 80}>
-                <div
-                  className={
-                    "h-full rounded-2xl border p-8 flex flex-col transition-all " +
-                    (p.highlight
-                      ? "border-electric bg-gradient-to-b from-royal/20 to-card glow-royal"
-                      : "border-border bg-card hover:border-electric/40")
-                  }
-                >
-                  {p.highlight && (
-                    <span className="self-start mb-4 rounded-full bg-electric/15 text-electric text-[10px] font-bold uppercase tracking-wider px-2 py-1">
-                      Most Popular
-                    </span>
-                  )}
-                  <h3 className="font-display text-2xl font-bold">{p.name}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{p.tagline}</p>
-                  <div className="mt-6 font-display text-4xl font-extrabold text-gradient-royal">{p.price}</div>
-                  <ul className="mt-6 space-y-3 text-sm">
-                    {p.features.map((f) => (
-                      <li key={f} className="flex gap-2">
-                        <Check size={16} className="text-electric mt-0.5 shrink-0" /> {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    to="/book-a-meeting"
-                    className={
-                      "mt-8 inline-flex justify-center rounded-full px-5 py-3 text-sm font-semibold transition " +
-                      (p.highlight
-                        ? "bg-gradient-to-r from-royal to-electric text-white hover:brightness-110"
-                        : "border border-border bg-white/5 text-foreground hover:bg-white/10")
-                    }
-                  >
-                    {p.cta}
-                  </Link>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
+     
       {/* WHY US */}
       <section id="why" className="py-24 md:py-32 border-t border-border">
         <div className="mx-auto max-w-7xl px-6">
@@ -584,7 +489,6 @@ function Home() {
           <div className="flex items-center gap-6">
             <a href="#about" className="hover:text-foreground">About</a>
             <a href="#screens" className="hover:text-foreground">Screens</a>
-            <a href="#packages" className="hover:text-foreground">Packages</a>
             <Link to="/book-a-meeting" className="hover:text-foreground">Book a Meeting</Link>
           </div>
         </div>
