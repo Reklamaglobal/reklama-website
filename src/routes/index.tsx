@@ -222,7 +222,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-6 pt-32 md:pt-40 pb-20 md:pb-28">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-electric/40 bg-electric/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-electric">
-              <Sparkles size={14} /> A Reklama Global Company
+              <Sparkles size={14} /> 
             </span>
           </Reveal>
           <Reveal delay={80}>
