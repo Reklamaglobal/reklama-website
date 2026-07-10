@@ -31,13 +31,13 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
-      <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="inline-block size-2.5 rounded-sm bg-royal shadow-[0_0_18px_var(--royal)] group-hover:scale-125 transition-transform" />
-          <span className="font-display font-extrabold tracking-tight text-lg">
-            Reka<span className="text-electric">DOOH</span>
-          </span>
-        </Link>
+    <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+  <Link to="/" className="flex items-center gap-2 group">
+    <span className="inline-block size-2.5 rounded-sm bg-royal shadow-[0_0_18px_var(--royal)] group-hover:scale-125 transition-transform" />
+    <span className="font-display font-extrabold tracking-tight text-lg">
+      Reklama Global
+    </span>
+  </Link>
         <nav className="hidden lg:flex items-center gap-7 text-sm">
           {links.map((l) => (
             <a
