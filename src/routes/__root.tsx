@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RekaDOOH — Premium Digital Outdoor Advertising in Bangalore" },
+      { title: "Reklama Global — Premium Digital Outdoor Advertising in Bangalore" },
       { name: "description", content: "RekaDOOH operates a premium Digital Out-of-Home (DOOH) network of LED billboards at Bangalore's busiest junctions — 720 plays per day, 14 hours active." },
       { name: "author", content: "RekaDOOH" },
       { property: "og:site_name", content: "RekaDOOH" },
