@@ -44,14 +44,14 @@ import screen2 from "@/assets/rekadooh-screen-2.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RekaDOOH — Premium Digital Outdoor Advertising in Bangalore" },
+      { title: "Reklama Global — Premium Digital Outdoor Advertising in Bangalore" },
       {
         name: "description",
         content:
           "Premium DOOH advertising across Bangalore. High-impact LED digital billboards at premium traffic junctions. 720 plays/day, 14 hours active. Book a meeting today.",
       },
-      { name: "keywords", content: "DOOH advertising Bangalore, LED billboard Bangalore, digital outdoor advertising, RekaDOOH, Reklama Global, outdoor media Bangalore" },
-      { property: "og:title", content: "RekaDOOH — Premium DOOH Advertising" },
+      { name: "keywords", content: "DOOH advertising Bangalore, LED billboard Bangalore, digital outdoor advertising, Reklama Global, outdoor media Bangalore" },
+      { property: "og:title", content: "Rekalama Global — Premium DOOH Advertising" },
       { property: "og:description", content: "Connect your brand with thousands of commuters every day through premium LED digital billboards at Bangalore's busiest junctions." },
       { property: "og:image", content: "/og-image.jpg" },
     ],
@@ -61,8 +61,8 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "RekaDOOH",
-          legalName: "RekaDOOH (a Reklama Global company)",
+          name: "Rekalama Global",
+          legalName: "Rekalama Global",
           url: "https://rekadooh.com",
           logo: "https://rekadooh.com/logo.png",
           description:
@@ -157,9 +157,9 @@ const industries = [
 const screens = [
   {
     img: heroImg,
-    location: "Trimity Circle",
+    location: "Trinity Circle",
     area: "North Bangalore",
-    dims: "40 ft × 20 ft",
+    dims: "25 ft × 25 ft",
     resolution: "P6 SMD",
     plays: "720 / day",
     hours: "8:30 AM – 10:30 PM",
@@ -169,8 +169,8 @@ const screens = [
     img: screen1,
     location: "Mekhri Circle",
     area: "Central Bangalore",
-    dims: "30 ft × 15 ft",
-    resolution: "P8 Outdoor",
+    dims: "25 ft × 25 ft",
+    resolution: "P6 SMD",
     plays: "720 / day",
     hours: "8:30 AM – 10:30 PM",
     format: "Static / Motion",
@@ -179,7 +179,7 @@ const screens = [
     img: screen2,
     location: "Commercial Street",
     area: "Shivajinagar",
-    dims: "20 ft × 30 ft (Portrait)",
+    dims: "12.5 ft × 22 ft (Portrait)",
     resolution: "P6 SMD",
     plays: "720 / day",
     hours: "8:30 AM – 10:30 PM",
@@ -285,7 +285,7 @@ function Home() {
           </Reveal>
           <Reveal delay={100} className="md:col-span-7 space-y-6">
             <p className="text-lg text-muted-foreground">
-              RekaDOOH is a premium Digital Out-of-Home advertising network
+              Rekalama Global is a premium Digital Out-of-Home advertising network
               operating under <span className="text-foreground">Reklama Global</span>.
               We specialise in high-quality LED digital billboards installed at
               strategic, high-traffic locations across Bangalore — engineered to
